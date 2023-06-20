@@ -1,8 +1,8 @@
-from flet_mvc import data
+from flet_mvc import data, FletModel
 
 
 # Model
-class Model():
+class Model(FletModel):
     @data
-    def TextNumber():
-        "0"
+    def TextNumber(self):
+        return "0"
